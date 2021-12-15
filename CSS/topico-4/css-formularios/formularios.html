@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+        html {
+            --black: #252323;
+            --green: #499668;
+            --grey: #3c413c;
+            --white: #ffffff;
+
+            font-size: 62.5%;
+            /* 10px = 1rem*/
+        }
+
+        body {
+            background: var(--black);
+            display: flex;
+            margin: 2rem 3rem;
+        }
+
+        .formulario {
+            width: 55rem;
+            max-width: 90vw;
+            /*1vw - 1%*/
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .cabecalho {
+            background: var(--green);
+            padding: 2rem;
+            height: auto;
+            border-radius: 0 .8rem .8rem .8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .cabecalho h1,
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--white);
+            margin-left: .5rem;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .cabecalho p {
+            font-size: 1.2rem;
+            margin-bottom: .5rem;
+        }
+
+        .cabecalho h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .formulario .corpo {
+            background: var(--grey);
+            margin-bottom: 2rem;
+            height: auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0 .5rem .5rem .5rem;
+        }
+
+        .formulario input,
+        textarea {
+            background: transparent;
+            height: 3rem;
+            border-width: 0 0 .1rem;
+            font-size: 1.5rem;
+            color: var(--white);
+            outline: none;
+        }
+
+        .formulario form .corpo label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+
+        .formulario form .corpo select {
+            height: 4rem;
+            font-size: 1.5rem;
+            color: var(--white);
+            outline: none;
+            cursor: pointer;
+            background: var(--grey);
+        }
+
+        .formulario form button {
+            background: var(--green);
+            color: var(--white);
+            border: none;
+            width: 10rem;
+            height: 4rem;
+            border-radius: .5rem;
+        }
+
+        .botao {
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+
+        <div class="cabecalho">
+            <h1>Pesquisa de opinião</h1>
+            <p>Este formulário é feito para avaliar o ensino emergencial durante a pandemia COVID-19.</p>
+            <p>Coloque as informaçãoes pedidas abaixo.</p>
+            <p>Todas as perguntas são obrigatórias.</p>
+        </div>
+
+        <form action="/processando-dados">
+
+            <div class="corpo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div class="corpo">
+                <label for="email">E-mail</label>
+                <input type="text">
+            </div>
+
+            <div class="corpo">
+                <label for="cidade">Idade</label>
+                <select name="cidade" id="cidade">
+                    <option value="select">Selecione a cidade</option>
+                    <option value="Maceió">Maceió</option>
+                    <option value="Marechal Deodoro">Marechal Deodoro</option>
+                    <option value="Palmeira dos Índios">Palmeira dos Índios</option>
+                    <option value="Arapiraca">Arapiraca</option>
+                    <option value="Satuba">Satuba</option>
+                </select>
+            </div>
+
+            <div class="corpo">
+                <label for="opiniao">Escreva sua opinião...</label>
+                <textarea name="opiniao" id="opiniao"></textarea>
+            </div>
+
+            <div class="botao">
+                <button>Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!--Seletor Descendente-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminário</title>
+    <style>
+        /*Seletor Descendente*/
+        div p {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seletores Combinadores</h1>
+    <p>Os Combinadores CSS selecionam os elementos com base em uma relação específica entre eles.</p>
+    <div>
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+    </div>
+    <p>Parágrafo 4. Não está na div</p>
+    <p>Parágrafo 5. Não está na div</p>
+
+
+
+
+
+
+
+    <!--Seletor Filho-->
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seminário</title>
+        <style>
+            /*Seletor Filho*/
+            div>p {
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Seletores Combinadores</h1>
+        <p>Os Combinadores CSS selecionam os elementos com base em uma relação específica entre eles.</p>
+        <div>
+            <p>Parágrafo 1</p>
+            <p>Parágrafo 2</p>
+            <section>
+                <p>Parágrafo 3</p>
+            </section>
+        </div>
+        <p>Parágrafo 4. Não está na div</p>
+        <p>Parágrafo 5. Não está na div</p>-->
+
+
+
+
+        <!--Seletor Irmão Adjacente-->
+        <!DOCTYPE html>
+        <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Seminário</title>
+            <style>
+                /*Seletor Irmão Adjacente*/
+                div+p {
+                    background-color: pink;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Seletores Combinadores</h1>
+            <p>Os Combinadores CSS selecionam os elementos com base em uma relação específica entre eles.</p>
+            <div>
+                <p>Parágrafo 1</p>
+                <p>Parágrafo 2</p>
+            </div>
+            <p>Parágrafo 3. Não está na div</p>
+            <p>Parágrafo 4. Não está na div</p>
+            <div>
+                <p>Parágrafo 5</p>
+                <p>Parágrafo 6</p>
+            </div>
+            <p>Parágrafo 7. Não está na div</p>
+            <p>Parágrafo 8. Não está na div</p>
+        </body>
+
+        </html>-->
+
+
+
+        <!--Seletor Geral de Irmãos-->
+        <!DOCTYPE html>
+        <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Seminário</title>
+            <style>
+                /*Seletor Geral de Irmãos*/
+                div~p {
+                    background-color: orange;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Seletores Combinadores</h1>
+            <p>Os Combinadores CSS selecionam os elementos com base em uma relação específica entre eles.</p>
+            <div>
+                <p>Parágrafo 1</p>
+                <p>Parágrafo 2</p>
+            </div>
+            <p>Parágrafo 3. Não está na div</p>
+            <p>Parágrafo 4. Não está na div</p>
+            <div>
+                <p>Parágrafo 5</p>
+                <p>Parágrafo 6</p>
+            </div>
+            <p>Parágrafo 7. Não está na div</p>
+            <p>Parágrafo 8. Não está na div</p>
+        </body>
+
+        </html>-->

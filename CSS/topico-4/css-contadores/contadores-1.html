@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+        body {
+            counter-reset: section;
+            background: rgb(53, 54, 54);
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        h1 {
+            counter-reset: subsection;
+            color: rgb(67, 167, 117);
+        }
+
+        h2 {
+            counter-reset: sub-subsection;
+            color: white;
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: counter(section) ". ";
+            border: rgb(145, 47, 47) solid;
+            border-width: 0 0 0 3px;
+            border-radius: 100%;
+            padding: 7px;
+        }
+
+        h2::before {
+            counter-increment: subsection;
+            content: counter(section) "."counter(subsection) " ";
+            margin-left: 15px;
+        }
+
+        h3::before {
+            counter-increment: sub-subsection;
+            content: counter(section) "."counter(subsection) "."counter(sub-subsection) " ";
+            margin-left: 20px;
+        }
+
+        h3 {
+            color: rgb(226, 225, 225);
+        }
+
+        p {
+            margin-left: 20px;
+            color: rgb(202, 202, 202);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Front-end</h1>
+    <h2>HTML5</h2>
+    <h3>Como funciona</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, hic deleniti minima corrupti doloremque, magni
+        consectetur repellendus explicabo autem aliquid nobis aspernatur eos mollitia totam amet incidunt velit impedit
+        voluptate!</p>
+
+    <h2>CSS3</h2>
+    <h3>Como funciona</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi autem aliquid sed explicabo ratione
+        numquam
+        veniam corrupti sunt vero voluptatibus repellat ut non, maxime optio. Doloremque, molestias ducimus. Quam.</p>
+
+    <h1>Back-end</h1>
+    <h2>JavaScript</h2>
+    <h3>Como funciona</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus provident repellendus aspernatur, iste nulla
+        quam
+        quaerat. Alias optio perspiciatis natus sit! Totam similique praesentium, rerum repellat iste hic quaerat dolor?
+    </p>
+    <h2>MySQL</h2>
+    <h3>Como funciona</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda delectus id veritatis unde, corrupti
+        dolore, corporis facilis natus nemo minima voluptas suscipit explicabo dolores architecto atque illum amet enim!
+    </p>
+</body>
+
+</html>

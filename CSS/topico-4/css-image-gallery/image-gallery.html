@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .gallery {
+            width: 60%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .box {
+            flex-basis: 100%;
+            width: 100%;
+            padding: 5px;
+            margin: 10px;
+            box-shadow: 1px 1px 15px 1px green;
+        }
+
+        .text {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .image:hover {
+            border: 2px solid #777;
+            height: 86%;
+            width: 84.5%;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .box {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="box">
+            <div class="image">
+                <img src=https://lh3.googleusercontent.com/proxy/lQp3iEsmVWXxWG2DlxgNWd-WQEQSBrg5zr1r62urGxj0mbGeLa1BSrKSMUOC4k0Z5sV9nRZQFVpBlVrjabu54MEfBOTwvgkanlazywsA5AxntFYVxP2HT23AgCj7S9S4GgIpabomIlTlAsLBCqV54_o
+                    width="250" />
+            </div>
+            <div class="text">
+                Aqui vai a descrição da imagem
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src=https://i.ytimg.com/vi/WvTRfQ7PNUk/maxresdefault.jpg width="250" />
+            </div>
+            <div class="text">
+                Visão geral do campus.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
