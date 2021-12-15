@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <style>
+        /*cor de um link não visitado */
+        /*sem decoração de texto*/
+        a:link {
+            text-decoration: none;
+            color: red;
+        }
+
+        /* cor de um link visitado*/
+        /* sem decoração de texto*/
+        a:visited {
+            text-decoration: none;
+            color: green;
+        }
+
+        /* cor do link quando mouse tá em cima*/
+        /* cor:rosa pink*/
+        /* decoração de texto:underline*/
+        /* fundo do link: amarelo*/
+        /* fonte do link:monospace*/
+        /* tamanho da fonte do link:200%*/
+        a:hover {
+            text-decoration: underline;
+            color: hotpink;
+            background-color: yellow;
+            font-family: monospace;
+            font-size: 200%;
+        }
+
+        /*link selecionado quando clica*/
+        /*decoração do link:underline*/
+        a:active {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Links - IFAL</h2>
+    <p><b><a href="https://www2.ifal.edu.br/" target="_blank">link ifal palmeira</a></b></p>
+    <p><b>Nota:</b> a:hover tem que vir após o a:link e o a:visited na definição de CSS para funcionar.</p>
+    <p><b>Nota:</b> a:active tem que vir depois a:hover na definição do CSS para funcionar.</p>
+
+</body>
+
+</html>
