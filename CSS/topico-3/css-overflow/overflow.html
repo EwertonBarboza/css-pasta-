@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #conteudo {
+            margin-top: 20px;
+            margin-left: 170px;
+            width: 980px;
+            height: 600px;
+            display: block;
+            background: #264b01;
+            border: 3px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: rgb(1, 1, 5);
+        }
+
+        .tabelas {
+            display: inline-flex;
+        }
+
+        .tb1 {
+            margin-left: 20px;
+            width: 220px;
+            height: 200px;
+            background-color: rgb(1, 1, 5);
+            border-radius: 10px;
+
+        }
+
+        .t1 {
+            margin: 10px;
+            background-color: white;
+            width: 200px;
+            height: 94px;
+            border-radius: 10px;
+            overflow: visible;
+        }
+
+        .tb2 {
+            margin-left: 20px;
+            width: 220px;
+            height: 200px;
+            background-color: rgb(1, 1, 5);
+            border-radius: 10px;
+        }
+
+        .t2 {
+            margin: 10px;
+            background-color: white;
+            width: 200px;
+            height: 94px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .tb3 {
+            margin-left: 20px;
+            width: 220px;
+            height: 200px;
+            background-color: rgb(1, 1, 5);
+            border-radius: 10px;
+        }
+
+        .t3 {
+            margin: 10px;
+            background-color: white;
+            width: 200px;
+            height: 94px;
+            border-radius: 10px;
+            overflow: scroll;
+        }
+
+        .tb4 {
+            margin-left: 20px;
+            width: 220px;
+            height: 200px;
+            background-color: rgb(1, 1, 5);
+            border-radius: 10px;
+        }
+
+        .t4 {
+            margin: 10px;
+            background-color: white;
+            width: 200px;
+            height: 94px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        .margin {
+            margin-top: 20px;
+        }
+
+        .h1 {
+            width: 400px;
+            background-color: rgb(1, 1, 5);
+            border-radius: 10px;
+            margin-left: 290px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(168, 2, 2);
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(168, 2, 2);
+        }
+
+        h4 {
+            color: rgb(168, 2, 2);
+        }
+
+        ol li {
+            color: rgb(168, 2, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteudo">
+        <div class="h1">
+            <h1>Overflow - Valores</h1>
+        </div>
+        <div class="tabelas">
+            <div class="tb1 margin opacity">
+                <h3>Visible</h3>
+                <div class="t1">
+                    <center>
+                        <h4>Cursos Subsequentes</h4>
+                    </center>
+                    <ol>
+                        <li>Informática</li>
+                        <li>Edificações</li>
+                        <li>Eletrotécnica</li>
+                        <li>Segurança do trabalho</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="tb2 margin opacity">
+                <h3>Hidden</h3>
+                <div class='t2'>
+                    <center>
+                        <h4>Cursos Subsequentes</h4>
+                    </center>
+                    <ol>
+                        <li>Informática</li>
+                        <li>Edificações</li>
+                        <li>Eletrotécnica</li>
+                        <li>Segurança do trabalho</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="tb3 margin opacity">
+                <h3>Scroll</h3>
+                <div class='t3'>
+                    <center>
+                        <h4>Cursos Subsequentes</h4>
+                    </center>
+                    <ol>
+                        <li>Informática</li>
+                        <li>Edificações</li>
+                        <li>Eletrotécnica</li>
+                        <li>Segurança do trabalho</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="tb4 margin opacity">
+                <h3>Auto</h3>
+                <div class='t4'>
+                    <center>
+                        <h4>Cursos Subsequentes</h4>
+                    </center>
+                    <ol>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
