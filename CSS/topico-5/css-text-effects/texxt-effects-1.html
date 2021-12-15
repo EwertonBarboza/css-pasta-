@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Efeitos de Texto - Seminário CSS - IFAL
+    </title>
+    <style>
+        #p1 {
+            border: 2px dashed red;
+
+            width: 75px;
+        }
+
+        #p2 {
+            border: 2px dashed red;
+
+            width: 75px;
+
+            /*
+  Valores suportados pelo white-space:
+    normal,pre,nowrap,pre-wrap,pre-line.
+    Teste e observe os diferentes comportamentos
+  */
+            white-space: nowrap;
+        }
+
+        #p3 {
+            border: 2px dashed red;
+
+            width: 75px;
+
+            white-space: nowrap;
+            /*
+  Valore padrões do overflow: visible, hidden, scroll, auto, initial e inherit.
+  Teste e observe os diferentes comportamentos
+  */
+            overflow: hidden;
+        }
+
+        #p4 {
+            border: 2px dashed red;
+
+            width: 75px;
+
+            white-space: nowrap;
+
+            overflow: hidden;
+
+            /*
+  Valores padões do text-overflow: ellipsis, clip e "insira um valor que desejar".
+ Teste e observe os diferentes comportamentos
+  */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Elemento sem estilização:
+    </p>
+    <p id="p1">
+        O IFAL é uma instituição de ensino superior e médio técnico com sede em 16 cidades de alagoas.
+    </p>
+    <p>
+        (#p2) Remoção das quebras de linha auromaticas:
+    </p>
+    <p id="p2">
+        O IFAL é uma instituição de ensino superior e médio técnico com sede em 16 cidades de alagoas.
+    </p>
+    <p>
+        (#p3) Escondendo o texto excedente:
+    </p>
+    <p id="p3">
+        O IFAL é uma instituição de ensino superior e médio técnico com sede em 16 cidades de alagoas.
+    </p>
+    <p>
+        (#p4) O que fazer com a última palavra do elemento:
+    </p>
+    <p id="p4">
+        O IFAL é uma instituição de ensino superior e médio técnico com sede em 16 cidades de alagoas.
+    </p>
+</body>
+
+</html>

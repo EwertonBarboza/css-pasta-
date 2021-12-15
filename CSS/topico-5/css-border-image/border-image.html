@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+    <meta charset="utf-8">
+    <title>Borda com Imagem - Seminário IFAL</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style>
+        #a {
+            border: 10px solid;
+
+            width: 200px;
+
+            border-image-source: url("borda.png");
+
+            border-image-slice: 30;
+
+            border-image-repeat: repeat;
+
+            border-image-width: 5px;
+
+            border-image-outset: 5px;
+        }
+
+        #b {
+            border: 10px solid;
+
+            width: 200px;
+
+            border-image: url("borda.png") 30 stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="a">
+        a - IFAL - Instituto Federal de Educação, Ciência e Tecnologia de Alagoas
+    </p>
+    <p id="b">
+        b - IFAL - Instituto Federal de Educação, Ciência e Tecnologia de Alagoas
+    </p>
+</body>
+
+</html>
