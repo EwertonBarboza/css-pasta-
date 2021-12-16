@@ -1,0 +1,65 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>@keyframes </title>
+    <style>
+        h1 {
+            font-family: castellar, serif;
+            font-size: 32px;
+            font-weight: bolder;
+            color: red;
+            text-decoration: underline;
+        }
+
+        @keyframes exe1 {
+            from {
+                left: 0px
+            }
+
+            to {
+                left: 500px
+            }
+        }
+
+        @keyframes exe2 {
+            from {
+                background-color: green
+            }
+
+            to {
+                background-color: yellow
+            }
+        }
+
+        p {
+            font-family: Castellar, serif;
+            font-size: 32px;
+            font-weight: bolder;
+            width: 70px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 10px;
+            position: relative;
+            animation-name: exe1, exe2;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        @Keyframes
+    </h1>
+
+    <p>
+        IFAL
+    </p>
+</body>
+
+</html>
